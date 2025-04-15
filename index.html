@@ -9,9 +9,23 @@
 </head>
 <body>
   <h1>Vanessa's Point Pal</h1>
-  <div id="app">
-    <!-- App content will load here -->
+  <div id="tracker">
+    <p><strong>Daily Points:</strong> <span id="daily-used">0</span>/24</p>
+    <p><strong>Weekly Flex Remaining:</strong> <span id="weekly-remaining">35</span></p>
+    <button onclick="resetDay()">Reset Day</button>
   </div>
+
+  <h2>Quick Add</h2>
+  <div id="quick-add"></div>
+
+  <h2>Add Custom Food</h2>
+  <input type="text" id="custom-food" placeholder="Food name" />
+  <input type="number" id="custom-points" placeholder="Points" />
+  <button onclick="addCustomFood()">Add Food</button>
+
+  <h2>Today’s Log</h2>
+  <ul id="log-list"></ul>
+
   <script src="script.js"></script>
 </body>
 </html>
